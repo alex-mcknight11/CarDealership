@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
+  <div class="p-3 mb-2 bg-info text-white">
     @using CarDealership.Models;
 
     <h1>Car Dealership</h1>
@@ -17,9 +18,10 @@
     <ul>
       @foreach (Car car in Model)
       {
-        <li>@car.MakeModel</li>
+        <li><strong>@car.MakeModel</strong>, @car.Mileage, @car.Year, $ @car.Price</li>
       }
     </ul>
     <a href="/cars/new">Add a new car to the lot.</a>
+  </div>
   </body>
 </html>

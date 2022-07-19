@@ -1,18 +1,22 @@
 using System;
 using System.Collections.Generic;
 
-namespace Cars.Models
+namespace CarDealership.Models
 {
   public class Car
   {
     public string MakeModel { get; set; }
     public string Mileage { get; set; }
+    public string Year { get; set; }
+    public string Price {get; set; }
     private static List<Car> _instances = new List<Car> { };
 
-    public Car(string makeModel, string mileage)
+    public Car(string makeModel, string mileage, string year, string price)
     {
       MakeModel = makeModel;
       Mileage = mileage;
+      Year = year;
+      Price = price;
       _instances.Add(this);
     }
     public static List<Car> GetAll()

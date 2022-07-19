@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="p-3 mb-2 bg-info text-white">
+    <div class="d-flex flex-column">
+      <div class="p-2">
+        <form action="/cars" method="post">
+      </div>
+      <div class="p-2">
+        <label for="makeModel">Add a new car to the lot (Make/Model):</label>
+        <input id="makeModel" name="makeModel" type="text">
+      <div class="p-2">
+        <label for="mileage">Mileage:</label>
+        <input id="mileage" name="mileage" type="text">
+      </div>
+      <div class="p-2">
+        <label for="year">Add the cars year:</label>
+        <input id="year" name="year" type="text">
+      </div>
+      <div class="p-2">
+        <label for="price">Add the cars price</label>
+        <input id="price" name="price" type="text">
+      </div>
+      <div class="p-2">
+        <button type="submit">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
